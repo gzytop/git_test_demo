@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Forge | 二维码生成器</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <p class="eyebrow">GitHub Demo · Vanilla JS</p>
+        <h1 id="app-title">QR Forge</h1>
+        <p class="subtitle">输入任意文本或链接，一键生成可下载的二维码。</p>
+      </section>
+
+      <section class="tool-card" aria-label="二维码生成工具">
+        <div class="input-panel">
+          <label for="qr-text">二维码内容</label>
+          <textarea
+            id="qr-text"
+            rows="6"
+            maxlength="500"
+            placeholder="例如：https://github.com/gzytop/git_test_demo"
+          ></textarea>
+          <div class="meta-row">
+            <span id="char-count">0 / 500</span>
+            <span id="status" role="status" aria-live="polite">等待输入</span>
+          </div>
+          <div class="actions">
+            <button id="generate-btn" class="primary" type="button">生成二维码</button>
+            <button id="clear-btn" type="button">清空</button>
+            <button id="sample-btn" type="button">示例</button>
+          </div>
+        </div>
+
+        <div class="preview-panel">
+          <div id="qr-output" class="qr-output" aria-label="二维码预览">
+            <span>二维码将在这里显示</span>
+          </div>
+          <button id="download-btn" class="download" type="button" disabled>下载 PNG</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
