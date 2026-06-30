@@ -11,11 +11,9 @@
 
 ## 在线 Demo
 
-GitHub Pages 启用后可访问：
+已启用 GitHub Pages：
 
-```text
 https://gzytop.github.io/git_test_demo/
-```
 
 ## 本地运行
 
